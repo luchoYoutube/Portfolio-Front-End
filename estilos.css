@@ -29,8 +29,9 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-	background: #37b3ed;
+	background: #26cff9;
 	border-radius: 5px;
+
 }
 /* Scroll Personalizado */
 
@@ -72,11 +73,15 @@ body::-webkit-scrollbar-thumb {
    text-align: right;
 }
 
+/*iconos*/
 .navbar-nav i{
    text-decoration: none;
-   color: #ffff;
+   color: rgb(255, 255, 255);
    display: inline-block;
    transition: .5s;
+   padding: 1px;
+   
+ 
 }
 
 .navbar-nav i:hover{
@@ -186,6 +191,7 @@ section {
 /*formulario inicio sesion*/
 .modal-body {
    background-color: #ecf0f3;
+   border-radius: 25px;
 }   
 
 .wrapper {
@@ -258,7 +264,7 @@ section {
 }
 
 .wrapper .btn:hover {
-    background-color: #6bc5f3;
+    background-color: #03A9F4;
 }
 
 .wrapper a {
@@ -336,7 +342,7 @@ ul.timeline > li {
 
 ul.timeline > li:before {
    content: ' ';
-   background: white;
+   background: rgb(255, 255, 255);
    display: inline-block;
    position: absolute;
    border-radius: 50%;
@@ -428,7 +434,11 @@ ul.timeline > li:before {
 
 /*Footer*/
 .footer {
-   background: linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0, .6)), url(/IMAGENES/bg.jpg);
+
+   /* background: linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0, .6)), url(/IMAGENES/bg.jpg);*/
+  
+   background-color: #000000;
+
    background-size: cover;    
 }
 
@@ -577,3 +587,128 @@ ul.timeline > li:before {
 }
 
 
+/*boton*/
+
+.btn-wsp{
+   position:fixed;
+   width:55px;
+   height:55px;
+   line-height: 56px;
+   bottom:25px;
+   right:25px;
+   background:#00ff5e;
+   color:#FFF;
+   border-radius:50px;
+   text-align:center;
+   font-size:35px;
+   box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+   z-index:100;
+   transition: all 300ms ease;
+ }
+ .btn-wsp:hover{
+   background: #19c55b;
+ }
+ @media only screen and (min-width:320px) and (max-width:768px){
+   .btn-wsp{
+       width:61px;
+       height:61px;
+       line-height: 65px;
+ }
+ }
+ 
+ 
+ @media only screen and (min-width:100px) and (max-width:568px){
+   .btn-wsp{
+       width:51px;
+       height:51px;
+       line-height: 54px;
+ }
+ }
+
+ @media only screen and (min-width:50px) and (max-width:368px){
+   .btn-wsp{
+       width:31px;
+       height:31px;
+       line-height: 33px;
+ }
+ }
+
+ 
+.about p {
+   text-align: justify;
+   border-radius: 25px;
+   padding: 40px;
+   margin-top: 50px;
+  
+   background-color: rgb(253, 253, 253);
+}
+  
+
+
+
+/*confuramos los iconos rgb   3em*/
+
+   #github,
+   #youtube,
+   #github,
+   #facebook,#discord {
+      font-size: 22px;
+      background-color: #000000;
+      color: #fff;
+      box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+      2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+      inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+      inset 2px 2px 10px #00000080;
+      border-radius: 39px;
+      margin: 5 40px;
+      margin-left: 15px;
+      margin-top: 2px;
+      margin-bottom: 10px;
+      animation: animate 3s linear infinite;
+      text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 15px #0072ff,
+      0 0 20px #0072ff;
+}
+
+
+
+
+
+/*tiempo de actuacion de rgb*/
+#youtube {
+  animation-delay: 0.3s;
+}
+#facebook {
+  animation-delay: 0.7s;
+}
+#github {
+  animation-delay: 0.1s;
+}
+
+#discord{
+  animation-delay: 0.8s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/*mejoras de distancia*/
+
+#experiencia {
+padding: 20px;
+
+}
+
+.timeline {
+   margin-top: 50px;
+}
+
+
+.progress-title {
+   margin-top: 60px;
+}

@@ -15,7 +15,7 @@
        <!--iconos-->
     <script src="https://kit.fontawesome.com/d8834d7870.js" crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" href="IMAGENES/icon.ico">
+    <link rel="shortcut icon" href="imagenes/icon.ico">
 </head>
 
 <body>
@@ -26,36 +26,51 @@
             <div class="container-fluid d-flex align-items-center">
                 <a class="navbar-brand" >
                     <!--Logo-->
-                    <img class="logoAP" src="IMAGENES/logo ArPro.png" alt="logo Argentina Programa" width="120em"  height="50em"></a>  
+                    <img class="logoAP" src="imagenes/logo ArPro.png" alt="logo Argentina Programa" width="120em"  height="50em"></a>  
                 </a>
                 <!-- Botón del menú -->
                 <button class="navbar-toggler bg-light" type="button"  data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fa-solid fa-bars"></i></span>
                 </button>
+
                 <!-- Elementos del menú colapsable -->
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <i class="fa-brands fa-facebook fa-xl"></i>
+
+                                <i class="fa fa-linkedin" id="discord"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <i class="fa-brands fa-instagram fa-xl"></i> 
+                                <i class="fa fa-instagram" id="discord"></i>
+                               <!-- <i class="fa-brands fa-instagram fa-xl"></i>  -->
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa-brands fa-github fa-xl"></i>
+                            <a  class="nav-link" href="#">
+                                <!-- <i class="fa-brands fa-github fa-xl"></i> -->
+
+                                <i class="fa fa-github-square github" id="discord" ></i>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a  class="nav-link" href="#">
+                                <i class="fa fa-youtube" id="youtube"></i>
+                            </a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <i class="fa-solid fa-user-lock fa-xl" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                                 <i class="fa-solid fa-user-lock fa-xl" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" ></i>  
                             </a>
                         </li>
+                        
                     </ul>   
+
+                    
                 </div>
                 
             </div>         
@@ -64,7 +79,7 @@
         <section class="home">
             <div class="container d-flex justify-content-center align-items-center">
                     <div class="col-mb-6 text text-center">
-                            <img src="IMAGENES/profile.jpg" alt="Foto de perfil" class="col-md-4 img-fluid rounded-circle" >
+                            <img src="imagenes/profile.jpg" alt="Foto de perfil" class="col-md-4 img-fluid rounded-circle" >
                     </div>  
                     <div class="presentacion">
                         <h2 class="col-mb-4">Hola soy</h2>
@@ -86,7 +101,7 @@
                     <button type="button" class="btn-close" name="button" data-bs-dismiss="modal"></button>
                     <div class="wrapper">
                         <div class="logo">
-                            <img src="IMAGENES/avatarLogin.jpg" alt="avatarLogin">
+                            <img src="imagenes/avatarLogin.jpg" alt="avatarLogin">
                         </div>
                         <form class="p-3 mt-3">
                             <div class="form-field d-flex align-items-center">
@@ -366,7 +381,7 @@
                 <div class="row">
                     <div class="col-md-4 col-xs-12">
                         <div class="first">
-                            <img class="logoAP" src="IMAGENES/logo ArPro.png" alt="Logo Argentina Programa" width="180px"  height="80px"></a> 
+                            <img class="logoAP" src="imagenes/logo ArPro.png" alt="Logo Argentina Programa" width="180px"  height="80px"></a> 
                         </div>
                     </div>
     
@@ -413,10 +428,20 @@
         </div>
     </footer>
 
+
+    <a href="https://api.whatsapp.com/send?phone=+543812060571" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+       
+    </a>
+  
+
             
      <!--link JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>
