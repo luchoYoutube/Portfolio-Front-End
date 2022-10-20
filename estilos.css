@@ -1,4 +1,4 @@
-/* Tipo de fuentes que se van a utilizar */
+/* Tipo de fuentes que se van a utilizar en el proyecto */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
@@ -21,6 +21,20 @@ body{
    background-image: linear-gradient(to right top, #a1c3f9, #97c1f8, #8bbff7, #7fbdf6, #72bbf4, #6ab8f5, #61b5f5, #57b2f6, #55adf8, #56a8fa, #59a2fb, #5f9cfb);
 }
 
+
+/* Scroll Personalizado apuntado a body*/
+
+body::-webkit-scrollbar {
+	width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #37b3ed;
+	border-radius: 5px;
+}
+/* Scroll Personalizado */
+
+
 /* Header*/ 
 .header{
    width: 100%;
@@ -29,7 +43,21 @@ body{
    background-attachment: fixed;
    background-size: cover;
    background-position: center center;
+
+   animation: movimiento 20s infinite linear alternate; 
 }
+
+
+/*movimiento del fondo */
+@keyframes movimiento{
+   from{
+       background-position: bottom left;
+   }to{
+       background-position: top right;
+   }
+}
+
+
 
 /* Navbar */
 .navbar{
